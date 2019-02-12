@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="dist/css/lightbox.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+ </head>
+<body>
+  <div class="container">
+    <input id="search" name="search" type="search" placeholder="Start typing here" data-toggle="hideseek" data-list=".list" autocomplete="off">
+      <ul class="list">
+          <li><span>I love hay bales. Took this snap on a drive through the countryside past some straw fields.</span><a class ="example-image-link" href="photo_gallery_v4/photos/01.jpg" data-lightbox="example-set" data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields."><img src="photo_gallery_v4/photos/thumbnails/01.jpg" alt="" class="example-image"></a></li>
+
+          <li><span>The lake was so calm today. We had a great view of the snow on the mountains from here.</span><a class ="example-image-link" href="photo_gallery_v4/photos/02.jpg" data-lightbox="example-set" data-title="The lake was so calm today. We had a great view of the snow on the mountains from here."><img src="photo_gallery_v4/photos/thumbnails/02.jpg" alt="" class="example-image"></a></li>
+
+          <li><span>I hiked to the top of the mountain and got this picture of the canyon and trees below.</span><a class ="example-image-link" href="photo_gallery_v4/photos/03.jpg" data-lightbox="example-set" data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below."><img src="photo_gallery_v4/photos/thumbnails/03.jpg" alt="" class="example-image"></a></li>
+
+          <li><span>It was amazing to see an iceberg up close, it was so cold but didn’t snow today.</span><a class ="example-image-link" href="photo_gallery_v4/photos/04.jpg" data-lightbox="example-set" data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today."><img src="photo_gallery_v4/photos/thumbnails/04.jpg" alt="" class="example-image"></a></li>
+
+          <li><span>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</span><a class ="example-image-link" href="photo_gallery_v4/photos/05.jpg" data-lightbox="example-set" data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons."><img src="photo_gallery_v4/photos/thumbnails/05.jpg" alt="" class="example-image"></a></li>
+
+          <li><span>Fall is coming, I love when the leaves on the trees start to change color.</span><a class ="example-image-link" href="photo_gallery_v4/photos/06.jpg" data-lightbox="example-set" data-title="Fall is coming, I love when the leaves on the trees start to change color."><img src="photo_gallery_v4/photos/thumbnails/06.jpg" alt="" class="example-image"></a></li>
+
+          <li><span>I drove past this plantation yesterday, everything is so green!</span><a class ="example-image-link" href="photo_gallery_v4/photos/07.jpg" data-lightbox="example-set" data-title="I drove past this plantation yesterday, everything is so green!"><img src="photo_gallery_v4/photos/thumbnails/07.jpg" alt="" class="example-image"></a></li>
+
+          <li><span>My summer vacation to the Oregon Coast. I love the sandy dunes!</span><a class ="example-image-link" href="photo_gallery_v4/photos/08.jpg" data-lightbox="example-set" data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!"><img src="photo_gallery_v4/photos/thumbnails/08.jpg" alt="" class="example-image"></a></li>
+
+          <li><span>We enjoyed a quiet stroll down this countryside lane. </span><a class ="example-image-link" href="photo_gallery_v4/photos/09.jpg" data-lightbox="example-set" data-title="We enjoyed a quiet stroll down this countryside lane."><img src="photo_gallery_v4/photos/thumbnails/09.jpg" alt="" class="example-image"></a></li>
+
+          <li><span>Sunset at the coast! The sky turned a lovely shade of orange.</span><a class ="example-image-link" href="photo_gallery_v4/photos/10.jpg" data-lightbox="example-set" data-title="Sunset at the coast! The sky turned a lovely shade of orange."><img src="photo_gallery_v4/photos/thumbnails/10.jpg" alt="" class="example-image"></a></li>
+
+          <li><span>I did a tour of a cave today and the view of the landscape below was breathtaking.</span><a class ="example-image-link" href="photo_gallery_v4/photos/11.jpg" data-lightbox="example-set" data-title="I did a tour of a cave today and the view of the landscape below was breathtaking."><img src="photo_gallery_v4/photos/thumbnails/11.jpg" alt="" class="example-image"></a></li>
+
+          <li><span>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</span><a class ="example-image-link" href="photo_gallery_v4/photos/12.jpg" data-lightbox="example-set" data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in."><img src="photo_gallery_v4/photos/thumbnails/12.jpg" alt="" class="example-image"></a></li>
+        </ul>
+  </div>
+   <script src="js/scripts.js"></script>
+   <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+
+   <script>
+     lightbox.option({
+       'maxWidth': 1000,
+       'maxHeight': 1000
+     })
+ </script>
+ <script src="HideSeek-master/jquery.hideseek.min.js"></script>
+ <!-- calling the hideseek plugin -->
+ <script>$('document').ready(function() {
+	$('#search').hideseek();
+});</script>
+</body>
+</html>

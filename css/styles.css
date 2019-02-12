@@ -1,0 +1,38 @@
+* {
+  text-align: center;
+  margin: auto;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+#search {
+  font-size: 16px;
+  padding: 1%;
+  text-align: left;
+  width: 50%;
+  margin-top: 5%;
+  margin-left: 2.5%;
+}
+
+.list img {
+  transition: 1s;
+  padding: 40px;
+  width: 200px;
+}
+
+.list img:hover {
+  filter: grayscale(100%);
+  transform: scale(1.1);
+}
+
+.list li {
+  display: inline;
+  list-style: none;
+  text-decoration: none;
+}
+
+.list li span {
+  display: none;
+}
